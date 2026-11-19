@@ -86,3 +86,7 @@ dialog {
   white-space: nowrap;
   clip-path: inset(100%);
 }
+
+[hidden] {
+  display: none !important;
+}
