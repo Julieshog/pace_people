@@ -7,6 +7,7 @@
   <title>Formular | Eventnavn</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
 </head>
 
 <body>
@@ -31,14 +32,39 @@
         <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
       </header>
 
+      <form>
+        <label for="nickname" name="nickname">NAVN</label>
+        <input id="nickname" type="text" name="nickname">
+
+        <label for="hype" name="hype">HVOR HURTIGT KAN DU LØBE 5KM?</label>
+        <input id="hype" type="range" name="hype">
+
+        <fieldset>
+          <legend>HVILKET TERRÆN VIL DU LØBE I?</legend>
+          <label for="flad">
+            <input id="flad" type="radio" name="reason" value="flad" checked>
+            FLAD
+          </label>
+          <label for="let">
+            <input id="let" type="radio" name="reason" value="let">
+            LET STIGNING
+          </label>
+          <label for="bakket">
+            <input id="bakket" type="radio" name="reason" value="bakket">
+            BAKKET
+          </label>
+        </fieldset>
+
+      </form>
+
       <form class="form-placeholder" action="./opsamling.html"></form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>INSTAGRAM: @PACE_PEOPLE</p>
+      <p class="contact">KONTAKT: PACEANDPEOPLE@GMAIL.COM</p>
     </div>
   </footer>
   <script src="./script.js"></script>

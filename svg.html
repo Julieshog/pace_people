@@ -4,21 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaktiv SVG | Eventnavn</title>
+  <title>Interaktiv SVG | Pace & people</title>
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./imgs/pace_people_logo.ico">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="index.html"> <img src="./imgs/pace_people_logo.webp" alt="Pace & people">
+      </a>
       <nav class="site-nav">
-        <button>Menu</button>
-        <ul class="menu" id="menu" popover>
+        <button popovertarget="menu" type="button">Menu</button>
+        <ul class="menu-list" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html" aria-current="page">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a href="./svg.html" aria-current="page">Program</a></li>
+          <li><a href="./form.html">Niveau</a></li>
         </ul>
       </nav>
     </div>
@@ -26,30 +28,50 @@
 
   <main>
     <section class="svg-page">
-      <header class="svg-intro">
-        <h1>Interaktiv SVG</h1>
-        <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
-      </header>
+
+      <h1>PROGRAM</h1>
 
       <section class="svg-layout">
-        <div class="svg-placeholder"></div>
+        <div class="svg-placeholder">
+          <svg viewBox="0 0 439.29 330.15" class="svg">
+            <use class="svg_item-cof" href="./imgs/pace1.svg#cof"></use>
+            <use class="svg_item-bun" href="./imgs/pace1.svg#bun"></use>
+            <use class="svg_item-t" href="./imgs/pace1.svg#t"></use>
+          </svg>
+        </div>
 
         <article class="panel">
-          <h2>Udforsk eventet</h2>
+          <h2>HVAD FÅR DU MED?</h2>
           <div class="accordion">
-            <!-- TODO: Lav om til details/summary -->
             <div class="accordion-item">
-              <h3>Punkt 1</h3>
-              <p>Beskriv første område, aktivitet eller del af dit event.</p>
+              <details open name="program" data-position="cof" id="details-cof">
+                <summary>KAFFE</summary>
+                <div>
+                  <p>Start dagen med en god kop kaffe, der giver dig energi og gør dagen lidt bedre.</p>
+                </div>
+              </details>
             </div>
+
             <div class="accordion-item">
-              <h3>Punkt 2</h3>
-              <p>Beskriv andet område, aktivitet eller del af dit event.</p>
+              <details name="program" data-position="bun" id="details-bun">
+                <summary>BMO</summary>
+                <div>
+                  <p>En friskbagt bolle med ost – en klassiker, der altid smager godt.</p>
+                </div>
+              </details>
             </div>
+
             <div class="accordion-item">
-              <h3>Punkt 3</h3>
-              <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
+              <details name="program" data-position="t" id="details-t">
+                <summary>DEN PERFEKTE T-SHIRT</summary>
+                <div>
+                  <p>Alle deltagere får en officiel T-shirt med i startpakken, så I kan løbe med stil og vise, at I er
+                    en del af
+                    fællesskabet!</p>
+                </div>
+              </details>
             </div>
+
           </div>
         </article>
       </section>
@@ -58,8 +80,8 @@
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>INSTAGRAM: @PACE_PEOPLE</p>
+      <p class="contact">KONTAKT: PACEANDPEOPLE@GMAIL.COM</p>
     </div>
   </footer>
   <script src="./script.js"></script>
